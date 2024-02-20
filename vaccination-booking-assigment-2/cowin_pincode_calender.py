@@ -8,7 +8,7 @@ response=requests.get('https://cdn-api.co-vin.in/api/v2/appointment/sessions/pub
 
 json_data=json.loads(response.text)
 
-if len(json_data['centers'])==0:
+if len(json_data['centers'])==0: 
 	print("No slots available")
 for slots in json_data['centers']:
 	print('-----------------------------------------------------------------------------')
